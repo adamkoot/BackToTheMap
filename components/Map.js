@@ -3,29 +3,14 @@ import MapView, { Marker } from "react-native-maps";
 import * as Location from "expo-location";
 import data from "../data.json";
 import { useNavigation } from "@react-navigation/native";
-export default function Map() {
-  const [location, setLocation] = useState({"coords":{"latitude":52.141103, "longitude":20.111}})
-  const [latitudeDelta, setLatitudeDelta] = useState(1);
-  const [longitudeDelta, setLongitudeDelta] = useState(1);
-  const [view, setView] = useState("picking");
-  useEffect(() => {
-    (async () => {
-      const { status } = await Location.requestForegroundPermissionsAsync();
-      if (status !== "granted") {
-        alert("Permission to access location was denied");
-      }
-    })();
-  }, []);
+export default function Map(props) {
 
-  useEffect(async () => {
-    const getPosition = async () => {
-      const location = await Location.getCurrentPositionAsync();
-      setLocation(location);
-    };
-    await getPosition()
-}, [])
-
-console.log(location)
+  const [region, setRegion] = useState({
+    latitude: 52.141103,
+    longitude:  20.111,
+    latitudeDelta: 1,
+    longitudeDelta: 1,
+  })
   let markers = data.map((country, index)=>{
     return (
       <Marker
@@ -35,6 +20,13 @@ console.log(location)
         longitude: country.longitude,
       }}
       onPress={() => {
+          setRegion({
+            latitude: country.latitude,
+            longitude:  country.longitude,
+            latitudeDelta: 10,
+            longitudeDelta: 12,
+          })
+          props.change("back")
       }}
     />
     )
@@ -43,13 +35,8 @@ console.log(location)
     <MapView
       style={{ flex: 1 }}
       showsCompass={false}
-      orientation={false}
-      initialRegion={{
-        latitude: location["coords"]["latitude"],
-        longitude: location["coords"]["longitude"],
-        latitudeDelta: latitudeDelta,
-        longitudeDelta: longitudeDelta,
-      }}
+      zoomEnabled={props.scrolling}
+      region={region}
       >
         {markers}
       </MapView>
