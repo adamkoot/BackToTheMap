@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { View, TouchableOpacity } from "react-native";
+import {TouchableOpacity, View, Image } from "react-native";
 import { useNavigation } from '@react-navigation/native';
-import GoBack from "../../assets/icons/goBack.png"
+import GoBack from "../../assets/icons/goBack.png";
 
 export default function CloseButton() {
 const navigation = useNavigation()

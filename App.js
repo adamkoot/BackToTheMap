@@ -1,8 +1,8 @@
 import React from "react";
-import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
+import { StyleSheet, Text, View, Image } from "react-native";
 import World from "./components/World.js";
-import ListCountry from "./components/ListCountry";
 import CloseButton from "./components/tools/CloseButton"
+import ListCountry from "./components/ListCountry";
 import Info from "./assets/icons/info.png";
 import Map from "./assets/icons/map.png";
 import List from "./assets/icons/list.png";
@@ -20,7 +20,8 @@ const Drawer = createDrawerNavigator();
 
 export default function App() {
   const CustomDrawerContent = (props) => {
-    const navigation = useNavigation()
+  const navigation = useNavigation()
+
     return (
       <View style={{
         height: '100%',
