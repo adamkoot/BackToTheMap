@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { StyleSheet, TouchableOpacity, View, Text, Image } from "react-native";
-import poland from "../../assets/poland.png";
-import sweden from "../../assets/sweden.png";
+import poland from "../../assets/icons/flags/poland.png";
+import sweden from "../../assets/icons/flags/sweden.png";
 
 export default function MapScreen(props) {
   console.log(props.photo);
