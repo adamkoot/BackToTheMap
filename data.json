@@ -1,10 +1,8 @@
-[
-    {
+[{
         "country": "Poland",
         "latitude": 52.141103,
         "longitude": 20.111,
-        "mapsCoords": [
-            {
+        "mapsCoords": [{
                 "city": "Cracow",
                 "latitude": 50.06653725785314,
                 "longitude": 19.949477357916304
@@ -55,14 +53,14 @@
                 "longitude": 19.820569999296865
             },
             {
-                "city":"Sandomierz",
-                "latitude":50.68408903393573,
-                "longitude":21.73977864310428
+                "city": "Sandomierz",
+                "latitude": 50.68408903393573,
+                "longitude": 21.73977864310428
             },
             {
-                "city":"Toruń",
-                "latitude":53.019129450225556,
-                "longitude":18.610485875090887
+                "city": "Toruń",
+                "latitude": 53.019129450225556,
+                "longitude": 18.610485875090887
             }
         ]
     },
@@ -70,35 +68,30 @@
         "country": "Italy",
         "latitude": 44.657552,
         "longitude": 10.798239,
-        "mapsCoords":[
-            {
-                "city":"Wenecja",
-                "latitude":45.438093630695285,
-                "longitude":12.327548314358413
-            }
-        ]
+        "mapsCoords": [{
+            "city": "Wenecja",
+            "latitude": 45.438093630695285,
+            "longitude": 12.327548314358413
+        }]
     },
     {
         "country": "Turkey",
         "latitude": 39.345357,
         "longitude": 31.019595,
-        "mapsCoords":[
-            {
-                "city":"Stambuł",
-                "latitude":41.02902318640653,
-                "longitude":28.890290877853875
-            }
-        ]
+        "mapsCoords": [{
+            "city": "Stambuł",
+            "latitude": 41.02902318640653,
+            "longitude": 28.890290877853875
+        }]
     },
     {
         "country": "Iran",
         "latitude": 33.595889,
         "longitude": 54.010872,
-        "mapsCoords":[
-            {
-                "city":"Isfahan",
-                "latitude":32.66216560653023,
-                "longitude":51.65406111603798
+        "mapsCoords": [{
+                "city": "Isfahan",
+                "latitude": 32.66216560653023,
+                "longitude": 51.65406111603798
             }
 
         ]
@@ -107,16 +100,15 @@
         "country": "Latvia",
         "latitude": 57.001927,
         "longitude": 24.817010,
-        "mapsCoords":[
-            {
-                "city":"Ryga",
-                "latitude":56.94665158840162,
-                "longitude":24.092697246852293
+        "mapsCoords": [{
+                "city": "Ryga",
+                "latitude": 56.94665158840162,
+                "longitude": 24.092697246852293
             },
             {
-                "city":"Salaspils",
-                "latitude":56.8638546397206,
-                "longitude":24.35563429602654
+                "city": "Salaspils",
+                "latitude": 56.8638546397206,
+                "longitude": 24.35563429602654
             }
 
         ]
@@ -125,11 +117,10 @@
         "country": "Russia",
         "latitude": 60.108824,
         "longitude": 55.682612,
-        "mapsCoords":[
-            {
-                "city":"Moskwa",
-                "latitude":55.7258312651991,
-                "longitude":37.60281348371678
+        "mapsCoords": [{
+                "city": "Moskwa",
+                "latitude": 55.7258312651991,
+                "longitude": 37.60281348371678
             }
 
         ]
@@ -138,16 +129,15 @@
         "country": "Ukraine",
         "latitude": 50.500696,
         "longitude": 31.240409,
-        "mapsCoords":[
-            {
-                "city":"Chocim",
-                "latitude":48.50920663531834,
-                "longitude":26.4919965499331
+        "mapsCoords": [{
+                "city": "Chocim",
+                "latitude": 48.50920663531834,
+                "longitude": 26.4919965499331
             },
             {
-                "city":"Obertyn",
-                "latitude":48.696114372863335,
-                "longitude":25.169506616225835
+                "city": "Obertyn",
+                "latitude": 48.696114372863335,
+                "longitude": 25.169506616225835
 
             }
         ]

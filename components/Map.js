@@ -1,19 +1,40 @@
-import React, { Component } from "react";
+import React, { Component, useState, useEffect } from "react";
 import MapView, { Marker } from "react-native-maps";
+import * as Location from "expo-location";
 import data from "../data.json";
 import { useNavigation } from "@react-navigation/native";
 export default function Map() {
-  const navigation = useNavigation()
+  const [location, setLocation] = useState({"coords":{"latitude":52.141103, "longitude":20.111}})
+  const [latitudeDelta, setLatitudeDelta] = useState(1);
+  const [longitudeDelta, setLongitudeDelta] = useState(1);
+  const [view, setView] = useState("picking");
+  useEffect(() => {
+    (async () => {
+      const { status } = await Location.requestForegroundPermissionsAsync();
+      if (status !== "granted") {
+        alert("Permission to access location was denied");
+      }
+    })();
+  }, []);
+
+  useEffect(async () => {
+    const getPosition = async () => {
+      const location = await Location.getCurrentPositionAsync();
+      setLocation(location);
+    };
+    await getPosition()
+}, [])
+
+console.log(location)
   let markers = data.map((country, index)=>{
     return (
       <Marker
-      keyExtractor={(index) => index.toString()}
+      key={index}
       coordinate={{
         latitude: country.latitude,
         longitude: country.longitude,
       }}
       onPress={() => {
-        navigation.navigate("Picked Country", {country})
       }}
     />
     )
@@ -23,12 +44,12 @@ export default function Map() {
       style={{ flex: 1 }}
       showsCompass={false}
       orientation={false}
-      // initialRegion={{
-      //   latitude: 52.141103,
-      //   longitude: 20.111,
-      //   latitudeDelta: 3,
-      //   longitudeDelta: 3,
-      // }}
+      initialRegion={{
+        latitude: location["coords"]["latitude"],
+        longitude: location["coords"]["longitude"],
+        latitudeDelta: latitudeDelta,
+        longitudeDelta: longitudeDelta,
+      }}
       >
         {markers}
       </MapView>
