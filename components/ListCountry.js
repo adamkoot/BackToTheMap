@@ -2,36 +2,36 @@ import React, { Component } from "react";
 import { StyleSheet, Text, View, FlatList } from "react-native";
 import BurgerButton from "./tools/BurgerButton";
 import CountryCard from "./tools/CountryCard";
-
+import DATA from "../data.json"
 export default function MapScreen() {
-  const DATA = [
-    {
-      country: "Poland",
-      latitude: 52.141103,
-      longitude: 20.111,
-    },
-    {
-      country: "Italy",
-    },
-    {
-      country: "Turkey",
-    },
-    {
-      country: "Iran",
-    },
-    {
-      country: "Latvia",
-    },
-    {
-      country: "Sweden",
-    },
-    {
-      country: "Russia",
-    },
-    {
-      country:"Ukraina"
-    }
-  ];
+  // const DATA = [
+  //   {
+  //     country: "Poland",
+  //     latitude: 52.141103,
+  //     longitude: 20.111,
+  //   },
+  //   {
+  //     country: "Italy",
+  //   },
+  //   {
+  //     country: "Turkey",
+  //   },
+  //   {
+  //     country: "Iran",
+  //   },
+  //   {
+  //     country: "Latvia",
+  //   },
+  //   {
+  //     country: "Sweden",
+  //   },
+  //   {
+  //     country: "Russia",
+  //   },
+  //   {
+  //     country:"Ukraina"
+  //   }
+  // ];
   return (
     <View style={styles.container}>
       <View style={styles.top}>
@@ -40,7 +40,7 @@ export default function MapScreen() {
           <Text style={styles.headerText}>LIST OF COUNTRIES</Text>
         </View>
       </View>
-
+      <View style={{flex:1,alignItems:"center"}}>
       <FlatList
         style={styles.list}
         data={DATA}
@@ -50,6 +50,7 @@ export default function MapScreen() {
           <CountryCard country={item.country} photo={item.photo} />
         )}
       />
+      </View>
     </View>
   );
 }
@@ -74,7 +75,7 @@ const styles = StyleSheet.create({
   },
   list: {
     marginTop: 80,
-    flex: 9,
+    flex: 1,
     textAlign: "center",
   },
 });
