@@ -7,6 +7,8 @@ export default function MapScreen() {
   const DATA = [
     {
       country: "Poland",
+      latitude: 52.141103,
+      longitude: 20.111,
     },
     {
       country: "Italy",
