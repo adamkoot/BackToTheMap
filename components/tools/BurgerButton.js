@@ -6,11 +6,10 @@ import { useNavigation } from '@react-navigation/native';
 export default function MapScreen() {
   const navigation = useNavigation();
   return (
-    <View style={styles.floatingButton}>
-      <TouchableOpacity onPress={() => {navigation.openDrawer()}}>
+    <TouchableOpacity onPress={() => { navigation.openDrawer() }} style={styles.floatingButton}>
         <Image source={hamburger} />
-      </TouchableOpacity>
-    </View>
+    </TouchableOpacity>
+
   );
 }
 

@@ -6,13 +6,13 @@ export default function Map() {
   return (
     <MapView
       style={{ flex: 1 }}
-      initialRegion={{
-        latitude: 50.111,
-        longitude: 20.111,
-        latitudeDelta: 1,
-        longitudeDelta: 1,
-      }}
-    ></MapView>
+      // initialRegion={{
+      //   latitude: 50.111,
+      //   longitude: 20.111,
+      //   latitudeDelta: 1,
+      //   longitudeDelta: 1,
+      // }}
+      ></MapView>
   );
 }
 
