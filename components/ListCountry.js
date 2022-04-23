@@ -21,7 +21,7 @@ export default function MapScreen() {
       country: "Lativia",
     },
     {
-      country: "Sweeden",
+      country: "Sweden",
     },
     {
       country: "Russia",
@@ -41,7 +41,9 @@ export default function MapScreen() {
         data={DATA}
         numColumns={2}
         keyExtractor={(item, index) => index.toString()}
-        renderItem={({ item }) => <CountryCard country={item.country} />}
+        renderItem={({ item }) => (
+          <CountryCard country={item.country} photo={item.photo} />
+        )}
       />
     </View>
   );
@@ -67,5 +69,7 @@ const styles = StyleSheet.create({
   list: {
     flex: 1,
     marginTop: 150,
+    textAlign: "center",
+    // alignItems: "center",
   },
 });
