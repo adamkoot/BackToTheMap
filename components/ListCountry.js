@@ -2,36 +2,36 @@ import React, { Component } from "react";
 import { StyleSheet, Text, View, FlatList } from "react-native";
 import BurgerButton from "./tools/BurgerButton";
 import CountryCard from "./tools/CountryCard";
-
+import DATA from "../data.json"
 export default function MapScreen() {
-  const DATA = [
-    {
-      country: "Poland",
-      latitude: 52.141103,
-      longitude: 20.111,
-    },
-    {
-      country: "Italy",
-    },
-    {
-      country: "Turkey",
-    },
-    {
-      country: "Iran",
-    },
-    {
-      country: "Latvia",
-    },
-    {
-      country: "Sweden",
-    },
-    {
-      country: "Russia",
-    },
-    {
-      country:"Ukraina"
-    }
-  ];
+  // const DATA = [
+  //   {
+  //     country: "Poland",
+  //     latitude: 52.141103,
+  //     longitude: 20.111,
+  //   },
+  //   {
+  //     country: "Italy",
+  //   },
+  //   {
+  //     country: "Turkey",
+  //   },
+  //   {
+  //     country: "Iran",
+  //   },
+  //   {
+  //     country: "Latvia",
+  //   },
+  //   {
+  //     country: "Sweden",
+  //   },
+  //   {
+  //     country: "Russia",
+  //   },
+  //   {
+  //     country:"Ukraina"
+  //   }
+  // ];
   return (
     <View style={styles.container}>
       <View style={styles.top}>
