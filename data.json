@@ -1,0 +1,41 @@
+[{
+        "country": "Poland",
+        "latitude": 52.141103,
+        "longitude": 20.111
+    },
+    {
+        "country": "Italy",
+        "latitude": 44.657552,
+        "longitude": 10.798239
+    },
+    {
+        "country": "Turkey",
+        "latitude": 39.345357,
+        "longitude": 31.019595
+    },
+    {
+        "country": "Iran",
+        "latitude": 33.595889,
+        "longitude": 54.010872
+    },
+    {
+        "country": "Latvia",
+        "latitude": 57.001927,
+        "longitude": 24.817010
+    },
+    {
+        "country": "Sweden",
+        "latitude": 60.260687,
+        "longitude": 14.996080
+    },
+    {
+        "country": "Russia",
+        "latitude": 60.108824,
+        "longitude": 55.682612
+    },
+    {
+        "country": "Ukraine",
+        "latitude": 50.500696,
+        "longitude": 31.240409
+    }
+]
