@@ -7,7 +7,7 @@ export default function MapScreen() {
   const navigation = useNavigation();
   return (
     <TouchableOpacity onPress={() => { navigation.openDrawer(); console.log(navigation) }} style={styles.floatingButton}>
-        <Image source={hamburger} />
+        <Image source={hamburger} style={{width:32, height:32}}/>
     </TouchableOpacity>
 
   );
@@ -21,9 +21,9 @@ const styles = StyleSheet.create({
     position: "absolute",
     top: 40,
     left: 20,
-    width: 50,
-    height: 50,
-    borderRadius: 25,
+    width: 64,
+    height: 64,
+    borderRadius: 32,
     zIndex: 1000,
     backgroundColor: "#00305b",
     borderColor: "white",
