@@ -9,7 +9,7 @@ export default function MapScreen() {
       <View style={styles.top}>
         <BurgerButton />
         <View style={styles.header}>
-          <Text style={styles.headerText}>LIST OF COUNTRIES</Text>
+          <Text style={styles.headerText}>COUNTRIES LIST</Text>
         </View>
       </View>
       <View style={{flex:1,alignItems:"center"}}>
@@ -18,8 +18,8 @@ export default function MapScreen() {
         data={DATA}
         numColumns={2}
         keyExtractor={(item, index) => index.toString()}
-        renderItem={({ item }) => (
-          <CountryCard country={item.country} photo={item.photo} />
+        renderItem={({ item,index}) => (
+          <CountryCard country={item.country} photo={item.photo} keyExtractor={index} />
         )}
       />
       </View>

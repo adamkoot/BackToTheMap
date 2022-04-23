@@ -17,7 +17,7 @@ export default function MapScreen(props) {
     >
       <View>
         <GetPhoto photo={props.country} />
-        <Text style={{ fontSize: 20, textAlign: "center" }}>
+        <Text style={{ fontSize: 25, textAlign: "center" }}>
           {props.country}
         </Text>
       </View>
@@ -58,6 +58,9 @@ const styles = StyleSheet.create({
     textAlign: "center",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor:"rgba(255,99,99,0.4)"
+    backgroundColor:"rgba(255,99,99,0.4)",
+    elevation: 20,
+    shadowColor: '#52006A',
+
   }
 });

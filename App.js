@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Image } from "react-native";
 import World from "./components/World.js";
 import CloseButton from "./components/tools/CloseButton"
 import ListCountry from "./components/ListCountry";
+import LicenseInfo from "./components/LicenseInfo";
 import Info from "./assets/icons/info.png";
 import Map from "./assets/icons/map.png";
 import List from "./assets/icons/list.png";
@@ -45,7 +46,7 @@ export default function App() {
           <DrawerItem
             label={()=><Text style={styles.drawerItem}>License info</Text>}
             icon={() => <Image source={Info} />}
-            onPress={() => {}}
+            onPress={() => navigation.navigate("License info")}
           />
         </DrawerContentScrollView>
         <CloseButton />
@@ -62,6 +63,7 @@ export default function App() {
       >
         <Drawer.Screen name="Map Screen" component={World} />
         <Drawer.Screen name="List Country" component={ListCountry} />
+        <Drawer.Screen name="License info" component={LicenseInfo} />
       </Drawer.Navigator>
     </NavigationContainer>
   );
