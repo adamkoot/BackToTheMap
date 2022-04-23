@@ -1,46 +1,155 @@
-[{
+[
+    {
         "country": "Poland",
         "latitude": 52.141103,
         "longitude": 20.111,
-        "mapsCoords": [{
-            "city": "Cracow",
-            "latitude": ,
-            "longitude": ,
-        }]
+        "mapsCoords": [
+            {
+                "city": "Cracow",
+                "latitude": 50.06653725785314,
+                "longitude": 19.949477357916304
+            },
+            {
+                "city": "Olkusz",
+                "latitude": 50.27934397319103,
+                "longitude": 19.562976862508766
+            },
+            {
+                "city": "Biecz",
+                "latitude": 49.73418190744044,
+                "longitude": 21.260029044344762
+            },
+            {
+                "city": "Poznan",
+                "latitude": 52.40579953650302,
+                "longitude": 16.90992336942673
+            },
+            {
+                "city": "Maciejowice",
+                "latitude": 50.14133115670236,
+                "longitude": 20.07184801840037
+            },
+            {
+                "city": "Krosno",
+                "latitude": 49.69317240122666,
+                "longitude": 21.740780561374997
+            },
+            {
+                "city": "Łowicz",
+                "latitude": 52.105560466687415,
+                "longitude": 19.94085695509003
+            },
+            {
+                "city": "Elbląg",
+                "latitude": 54.16503200864308,
+                "longitude": 19.399991054321617
+            },
+            {
+                "city": "Racławice",
+                "latitude": 50.32569634542202,
+                "longitude": 20.236279740203365
+            },
+            {
+                "city": "Szczekociny",
+                "latitude": 50.62402328116856,
+                "longitude": 19.820569999296865
+            },
+            {
+                "city":"Sandomierz",
+                "latitude":50.68408903393573,
+                "longitude":21.73977864310428
+            },
+            {
+                "city":"Toruń",
+                "latitude":53.019129450225556,
+                "longitude":18.610485875090887
+            }
+        ]
     },
     {
         "country": "Italy",
         "latitude": 44.657552,
-        "longitude": 10.798239
+        "longitude": 10.798239,
+        "mapsCoords":[
+            {
+                "city":"Wenecja",
+                "latitude":45.438093630695285,
+                "longitude":12.327548314358413
+            }
+        ]
     },
     {
         "country": "Turkey",
         "latitude": 39.345357,
-        "longitude": 31.019595
+        "longitude": 31.019595,
+        "mapsCoords":[
+            {
+                "city":"Stambuł",
+                "latitude":41.02902318640653,
+                "longitude":28.890290877853875
+            }
+        ]
     },
     {
         "country": "Iran",
         "latitude": 33.595889,
-        "longitude": 54.010872
+        "longitude": 54.010872,
+        "mapsCoords":[
+            {
+                "city":"Isfahan",
+                "latitude":32.66216560653023,
+                "longitude":51.65406111603798
+            }
+
+        ]
     },
     {
         "country": "Latvia",
         "latitude": 57.001927,
-        "longitude": 24.817010
-    },
-    {
-        "country": "Sweden",
-        "latitude": 60.260687,
-        "longitude": 14.996080
+        "longitude": 24.817010,
+        "mapsCoords":[
+            {
+                "city":"Ryga",
+                "latitude":56.94665158840162,
+                "longitude":24.092697246852293
+            },
+            {
+                "city":"Salaspils",
+                "latitude":56.8638546397206,
+                "longitude":24.35563429602654
+            }
+
+        ]
     },
     {
         "country": "Russia",
         "latitude": 60.108824,
-        "longitude": 55.682612
+        "longitude": 55.682612,
+        "mapsCoords":[
+            {
+                "city":"Moskwa",
+                "latitude":55.7258312651991,
+                "longitude":37.60281348371678
+            }
+
+        ]
     },
     {
         "country": "Ukraine",
         "latitude": 50.500696,
-        "longitude": 31.240409
+        "longitude": 31.240409,
+        "mapsCoords":[
+            {
+                "city":"Chocim",
+                "latitude":48.50920663531834,
+                "longitude":26.4919965499331
+            },
+            {
+                "city":"Obertyn",
+                "latitude":48.696114372863335,
+                "longitude":25.169506616225835
+
+            }
+        ]
     }
 ]

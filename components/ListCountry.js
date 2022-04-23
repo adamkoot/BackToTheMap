@@ -40,7 +40,7 @@ export default function MapScreen() {
           <Text style={styles.headerText}>LIST OF COUNTRIES</Text>
         </View>
       </View>
-
+      <View style={{flex:1,alignItems:"center"}}>
       <FlatList
         style={styles.list}
         data={DATA}
@@ -50,6 +50,7 @@ export default function MapScreen() {
           <CountryCard country={item.country} photo={item.photo} />
         )}
       />
+      </View>
     </View>
   );
 }
@@ -74,7 +75,7 @@ const styles = StyleSheet.create({
   },
   list: {
     marginTop: 80,
-    flex: 9,
+    flex: 1,
     textAlign: "center",
   },
 });
