@@ -6,6 +6,8 @@ export default function Map() {
   return (
     <MapView
       style={{ flex: 1 }}
+      showsCompass={false}
+      orientation={false}
       // initialRegion={{
       //   latitude: 50.111,
       //   longitude: 20.111,
