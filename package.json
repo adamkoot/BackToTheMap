@@ -26,7 +26,8 @@
     "react-native-web": "0.17.1",
     "expo-secure-store": "~11.0.3",
     "@react-native-picker/picker": "2.1.0",
-    "react-native-maps": "0.28.1"
+    "react-native-maps": "0.28.1",
+    "expo-location": "~13.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
