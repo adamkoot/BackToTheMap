@@ -3,7 +3,7 @@ import MapView, { Marker } from "react-native-maps";
 import * as Location from "expo-location";
 import data from "../data.json";
 import { useNavigation } from "@react-navigation/native";
-export default function Map() {
+export default function Map(props) {
 
   const [region, setRegion] = useState({
     latitude: 52.141103,
@@ -11,9 +11,6 @@ export default function Map() {
     latitudeDelta: 1,
     longitudeDelta: 1,
   })
-  const [view, setView] = useState("picking");
-  const [scrolling, setScrolling] = useState(true)
-
   let markers = data.map((country, index)=>{
     return (
       <Marker
@@ -26,9 +23,10 @@ export default function Map() {
           setRegion({
             latitude: country.latitude,
             longitude:  country.longitude,
-            latitudeDelta: 16,
-            longitudeDelta: 18,
+            latitudeDelta: 10,
+            longitudeDelta: 12,
           })
+          props.change("back")
       }}
     />
     )
@@ -37,7 +35,7 @@ export default function Map() {
     <MapView
       style={{ flex: 1 }}
       showsCompass={false}
-      zoomEnabled={scrolling}
+      zoomEnabled={props.scrolling}
       region={region}
       >
         {markers}

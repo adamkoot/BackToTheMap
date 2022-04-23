@@ -1,16 +1,29 @@
 import React, { Component } from "react";
 import { StyleSheet, TouchableOpacity, View, Image } from "react-native";
 import hamburger from "../../assets/icons/hamburger.png";
+import goback from "../../assets/icons/whiteGoBack.png";
+
 import { useNavigation } from '@react-navigation/native';
 
-export default function MapScreen() {
-  const navigation = useNavigation();
-  return (
-    <TouchableOpacity onPress={() => { navigation.openDrawer(); console.log(navigation) }} style={styles.floatingButton}>
-        <Image source={hamburger} style={{width:32, height:32}}/>
-    </TouchableOpacity>
+export default function BurgerButton(props) {
+  if(props.view=="burger"){
+    const navigation = useNavigation();
+    return (
+      <TouchableOpacity onPress={() => { navigation.openDrawer(); console.log(navigation) }} style={styles.floatingButton}>
+          <Image source={hamburger} style={{width:32, height:32}}/>
+      </TouchableOpacity>
+  
+    );
+  }
+  else{
+      return (
+        <TouchableOpacity onPress={() => { props.change("burger")}} style={styles.floatingButton}>
+          <Image source={goback} style={{width:32, height:32}}/>
 
-  );
+        </TouchableOpacity>
+      );
+  }
+
 }
 
 const styles = StyleSheet.create({
