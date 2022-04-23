@@ -2,9 +2,13 @@ import React, { Component } from "react";
 import { StyleSheet, TouchableOpacity, View, Text, Image } from "react-native";
 import poland from "../../assets/icons/flags/poland.png";
 import sweden from "../../assets/icons/flags/sweden.png";
+import iran from "../../assets/icons/flags/iran.png";
+import italy from "../../assets/icons/flags/italy.png";
+import latvia from "../../assets/icons/flags/latvia.png";
+import russia from "../../assets/icons/flags/russia.png";
+import turkey from "../../assets/icons/flags/turkey.png";
 
 export default function MapScreen(props) {
-  console.log(props.photo);
   return (
     <TouchableOpacity
       style={styles.card}
@@ -12,19 +16,37 @@ export default function MapScreen(props) {
     >
       <View>
         <GetPhoto photo={props.country} />
-        <Text>{props.country}</Text>
+        <Text style={{ fontSize: 20, textAlign: "center" }}>
+          {props.country}
+        </Text>
       </View>
     </TouchableOpacity>
   );
 }
 function GetPhoto(props) {
+  console.log(props.photo);
   if (props.photo == "Sweden") {
-    return <Image source={sweden}></Image>;
-  } else {
-    return <Image source={poland}></Image>;
+    return <Image style={styles.photo} source={sweden}></Image>;
+  } else if (props.photo == "Poland") {
+    return <Image style={styles.photo} source={poland}></Image>;
+  } else if (props.photo == "Italy") {
+    return <Image style={styles.photo} source={italy}></Image>;
+  } else if (props.photo == "Turkey") {
+    return <Image style={styles.photo} source={turkey}></Image>;
+  } else if (props.photo == "Iran") {
+    return <Image style={styles.photo} source={iran}></Image>;
+  } else if (props.photo == "Latvia") {
+    return <Image style={styles.photo} source={latvia}></Image>;
+  } else if (props.photo == "Russia") {
+    return <Image style={styles.photo} source={russia}></Image>;
   }
 }
+
 const styles = StyleSheet.create({
+  photo: {
+    width: 69,
+    height: 69,
+  },
   card: {
     flex: 1,
     padding: 20,

@@ -18,7 +18,7 @@ export default function MapScreen() {
       country: "Iran",
     },
     {
-      country: "Lativia",
+      country: "Latvia",
     },
     {
       country: "Sweden",
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
   },
   list: {
     flex: 1,
-    marginTop: 150,
+    marginTop: 100,
     textAlign: "center",
   },
 });
