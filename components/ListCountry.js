@@ -28,6 +28,9 @@ export default function MapScreen() {
     {
       country: "Russia",
     },
+    {
+      country:"Ukraina"
+    }
   ];
   return (
     <View style={styles.container}>
