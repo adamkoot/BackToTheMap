@@ -12,7 +12,7 @@ import ukraine from "../../assets/icons/flags/ukraine.png";
 export default function MapScreen(props) {
   return (
     <TouchableOpacity
-      style={[styles.card,styles.shadowProp]}
+      style={styles.card}
       //   onPress={this.props.country}
     >
       <View>
@@ -40,7 +40,7 @@ function GetPhoto(props) {
     return <Image style={styles.photo} source={latvia}></Image>;
   } else if (props.photo == "Russia") {
     return <Image style={styles.photo} source={russia}></Image>;
-  }else if (props.photo == "Ukraine") {
+  }else if (props.photo = "Ukraine") {
     return <Image style={styles.photo} source={ukraine}></Image>;
   }
 }
