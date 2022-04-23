@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import { StyleSheet, TouchableOpacity, View, Image } from "react-native";
 import hamburger from "../../assets/icons/hamburger.png";
+import { useNavigation } from '@react-navigation/native';
 
 export default function MapScreen() {
+  const navigation = useNavigation();
   return (
     <View style={styles.floatingButton}>
-      <TouchableOpacity>
-      {/* onPress={() => navigation.openDrawer() pokmin cos z ta funkcja */}
+      <TouchableOpacity onPress={() => {navigation.openDrawer()}}>
         <Image source={hamburger} />
       </TouchableOpacity>
     </View>
