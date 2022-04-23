@@ -29,9 +29,11 @@ export default function MapScreen() {
   ];
   return (
     <View style={styles.container}>
-      <BurgerButton />
-      <View style={styles.header}>
-        <Text style={styles.header_text}>LIST OF COUNTRIES</Text>
+      <View style={styles.top}>
+        <BurgerButton />
+        <View style={styles.header}>
+          <Text style={styles.header_text}>LIST OF COUNTRIES</Text>
+        </View>
       </View>
 
       <FlatList
@@ -49,6 +51,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
+  top: {
+    flex: 0,
+    // marginTop: 150,
+  },
   header_text: {
     textAlign: "center",
     fontSize: 22,
@@ -60,5 +66,6 @@ const styles = StyleSheet.create({
   },
   list: {
     flex: 1,
+    marginTop: 150,
   },
 });
