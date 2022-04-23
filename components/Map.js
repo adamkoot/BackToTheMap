@@ -4,7 +4,7 @@ import * as Location from "expo-location";
 import data from "../data.json";
 import { useNavigation } from "@react-navigation/native";
 export default function Map() {
-  const [location, setLocation] = useState(null)
+  const [location, setLocation] = useState({"coords":{"latitude":52.141103, "longitude":20.111}})
   const [latitudeDelta, setLatitudeDelta] = useState(1);
   const [longitudeDelta, setLongitudeDelta] = useState(1);
   const [view, setView] = useState("picking");
@@ -24,6 +24,7 @@ export default function Map() {
     };
     await getPosition()
 }, [])
+
 console.log(location)
   let markers = data.map((country, index)=>{
     return (
@@ -44,8 +45,8 @@ console.log(location)
       showsCompass={false}
       orientation={false}
       initialRegion={{
-        latitude: 50,
-        longitude: 50,
+        latitude: location["coords"]["latitude"],
+        longitude: location["coords"]["longitude"],
         latitudeDelta: latitudeDelta,
         longitudeDelta: longitudeDelta,
       }}
