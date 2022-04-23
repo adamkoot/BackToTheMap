@@ -39,7 +39,7 @@ export default function App() {
           <DrawerItem
             label={()=><Text style={styles.drawerItem}>Map</Text>}
             icon={() => <Image source={Map} />}
-            onPress={() => navigation.navigate("MapScreen")}
+            onPress={() => navigation.navigate("Map Screen")}
   
           />
           <DrawerItem
@@ -60,7 +60,7 @@ export default function App() {
         }}
         drawerContent={(props) => <CustomDrawerContent {...props} />}
       >
-        <Drawer.Screen name="MapScreen" component={World} />
+        <Drawer.Screen name="Map Screen" component={World} />
         <Drawer.Screen name="List Country" component={ListCountry} />
       </Drawer.Navigator>
     </NavigationContainer>
