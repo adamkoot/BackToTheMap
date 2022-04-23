@@ -12,12 +12,12 @@ import ukraine from "../../assets/icons/flags/ukraine.png";
 export default function MapScreen(props) {
   return (
     <TouchableOpacity
-      style={styles.card}
+      style={[styles.card,styles.shadowProp]}
       //   onPress={this.props.country}
     >
       <View>
         <GetPhoto photo={props.country} />
-        <Text style={{ fontSize: 20, textAlign: "center" }}>
+        <Text style={{ fontSize: 25, textAlign: "center" }}>
           {props.country}
         </Text>
       </View>
@@ -40,7 +40,7 @@ function GetPhoto(props) {
     return <Image style={styles.photo} source={latvia}></Image>;
   } else if (props.photo == "Russia") {
     return <Image style={styles.photo} source={russia}></Image>;
-  }else if (props.photo = "Ukraine") {
+  }else if (props.photo == "Ukraine") {
     return <Image style={styles.photo} source={ukraine}></Image>;
   }
 }
@@ -58,6 +58,9 @@ const styles = StyleSheet.create({
     textAlign: "center",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor:"rgba(255,99,99,0.4)"
+    backgroundColor:"rgba(255,99,99,0.4)",
+    elevation: 20,
+    shadowColor: '#52006A',
+
   }
 });
