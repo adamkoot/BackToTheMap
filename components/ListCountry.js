@@ -32,7 +32,7 @@ export default function MapScreen() {
       <View style={styles.top}>
         <BurgerButton />
         <View style={styles.header}>
-          <Text style={styles.header_text}>LIST OF COUNTRIES</Text>
+          <Text style={styles.headerText}>LIST OF COUNTRIES</Text>
         </View>
       </View>
 
@@ -56,18 +56,20 @@ const styles = StyleSheet.create({
   top: {
     flex: 0,
   },
-  header_text: {
+  headerText: {
     textAlign: "center",
-    fontSize: 22,
+    fontSize: 26,
     fontWeight: "bold",
+    color:"#00305b",
+    marginLeft: 40,
+    marginTop: 6,
   },
   header: {
     top: 50,
-    flex: 1,
   },
   list: {
-    flex: 1,
-    marginTop: 100,
+    marginTop: 80,
+    flex: 9,
     textAlign: "center",
   },
 });
