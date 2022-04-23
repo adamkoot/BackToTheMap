@@ -1,0 +1,204 @@
+{
+  "Kraków": [
+    {
+      "src": "https://markow.pl/coding_da_vinci/krakow1.png",
+      "data": "1493",
+      "autor": "",
+      "opis": "[Widok Krakowa z 1493 r.]"
+    },
+    {
+      "src": "https://markow.pl/coding_da_vinci/krakow2.png",
+      "data": "1592",
+      "autor": "",
+      "opis": "[Widok przedstawiający wjazd arcyksiężniczki austriackiej Anny, narzeczonej króla Zygmunta III, do Krakowa, w dniu 28. 5. 1592 r.]"
+    },
+    {
+      "src": "https://markow.pl/coding_da_vinci/krakow3.png",
+      "data": "[1603-1605]",
+      "autor": "",
+      "opis": "Kraków od północnego zachodu"
+    },
+    {
+      "src": "https://markow.pl/coding_da_vinci/krakow4.png",
+      "data": "[1640-1650]",
+      "autor": "",
+      "opis": "[Widok Krakowa od zachodu z połowy XVII wieku]"
+    },
+    {
+      "src": "https://markow.pl/coding_da_vinci/krakow5.png",
+      "data": "1655",
+      "autor": "Eryk Dahlberg",
+      "opis": "Cracovia Sedes Regia. Obsessa et a Serenissimo Sve[c]o[rum] Gothorum Rege Carolo Gustavo Deditione Capta d. 8 Octob. 1655"
+    },
+    {
+      "src": "https://markow.pl/coding_da_vinci/krakow6.png",
+      "data": "1847",
+      "autor": "Aleksander Kocziczka",
+      "opis": "Plan von Cracau mit Podgórze und der nächsten Umgebung. Herausgegeben und lithographirt von Aleksander Kocziczka k.k. Unterlieutnant im 39 ten L.J.R. Dom Miguel. Olmütz 1847"
+    }
+  ],
+  "Olkusz": [
+    {
+      "src": "https://markow.pl/coding_da_vinci/olkusz.png",
+      "data": "1850",
+      "autor": "",
+      "opis": "Prospekt Olkusza od Bolesławia"
+    }
+  ],
+  "Biecz": [
+    {
+      "src": "https://markow.pl/coding_da_vinci/bijacz1.png",
+      "data": "1618",
+      "autor": "",
+      "opis": "Biecz - widok miasta"
+    },
+    {
+      "src": "https://markow.pl/coding_da_vinci/bijacz2.png",
+      "data": "1618",
+      "autor": "",
+      "opis": "Biecz - widok miasta"
+    }
+  ],
+  "Poznan": [
+    {
+      "src": "https://markow.pl/coding_da_vinci/poznan.png",
+      "data": "1850",
+      "autor": "",
+      "opis": "[Poznań. Widok miasta] Posnania elegans Poloniae in finibus Silesiae civitas"
+    }
+  ],
+  "Maciejowice": [
+    {
+      "src": "https://markow.pl/coding_da_vinci/maciejowice.png",
+      "data": "1801-1900",
+      "autor": "Michał Stachowicz",
+      "opis": "Plan bitwy pod Maciejowicami"
+    }
+  ],
+  "Krosno": [
+    {
+      "src": "https://markow.pl/coding_da_vinci/krosno.png",
+      "data": "1618",
+      "autor": "",
+      "opis": "[Krosno. Widok miasta] Crosno"
+    }
+  ],
+  "Łowicz": [
+    {
+      "src": "https://markow.pl/coding_da_vinci/lowicz.png",
+      "data": "1618",
+      "autor": "",
+      "opis": "[Łowicz. Widok miasta] Lovicensis civitas quae est archiepiscopa: Gnesnensis residentia in Masovia"
+    }
+  ],
+  "Elbląg": [
+    {
+      "src": "https://markow.pl/coding_da_vinci/elblag.png",
+      "data": "1717",
+      "autor": "Mateusz Merian",
+      "opis": "[Elbląg. Widok miasta] Wahre Contrafactur der Statt Elbing wie dieselbe von Königl: May: zu Schweden etc. befestiget worden. Anno 1626 und, wie selbige von Ihro Königl: May: von Schweden Carl der XII eingenommen worden Anno 1703"
+    }
+  ],
+  "Racławice": [
+    {
+      "src": "https://markow.pl/coding_da_vinci/raclawice.png",
+      "data": "[1890-1899]",
+      "autor": "",
+      "opis": "Plan bitwy pod Racławicami"
+    }
+  ],
+  "Szczekociny": [
+    {
+      "src": "https://markow.pl/coding_da_vinci/szczekociny.png",
+      "data": "[1801-1899]",
+      "autor": "Michał Stachowicz",
+      "opis": "Plan bitwy pod Szczekocinami"
+    }
+  ],
+  "Sandomierz": [
+    {
+      "src": "https://markow.pl/coding_da_vinci/sandomierz.png",
+      "data": "1656-1663",
+      "autor": "",
+      "opis": "Abbildung der Schwedischen und Polnischen Feldläger am Weixel, San und Nigerflus da się Schwedishe noch übrige Völcker eingeschlossen gehalten worden, geschehen im Martio anno 1656"
+    }
+  ],
+  "Toruń": [
+    {
+      "src": "https://markow.pl/coding_da_vinci/torun1.png",
+      "data": "1631",
+      "autor": "Jakub Hoffmann",
+      "opis": "[Toruń. Widok miasta] Civitas Thorunium una cum sua fortficatione accurate delineata... Ipse author fecit anno 1631"
+    },
+    {
+      "src": "https://markow.pl/coding_da_vinci/torun2.png",
+      "data": "[po 1657]",
+      "autor": "",
+      "opis": "[Toruń. Widok miasta] Thorunium Thoren"
+    }
+  ],
+  "Wenecja": [
+    {
+      "src": "https://markow.pl/coding_da_vinci/wenecja.png",
+      "data": "1649",
+      "autor": "Mateusz Merian",
+      "opis": "[Wenecja. Widok miasta] Venetia"
+    }
+  ],
+  "Stambuł": [
+    {
+      "src": "https://markow.pl/coding_da_vinci/konstantynopol.png",
+      "data": "1641-1652",
+      "autor": "Mateusz Merian",
+      "opis": "[Konstantynopol. Widok miasta] Constantinopolitanae urbis effigies ad vivum expressa, quam Turcae Stampoldam vocant. A. MDCXXV"
+    }
+  ],
+  "Isfahan": [
+    {
+      "src": "https://markow.pl/coding_da_vinci/isfahan.png",
+      "data": "1649",
+      "autor": "Mateusz Merian",
+      "opis": "Isfahan [Widok miasta z lotu ptaka]"
+    }
+  ],
+  "Ryga": [
+    {
+      "src": "https://markow.pl/coding_da_vinci/ryga.png",
+      "data": "[1651-1699]",
+      "autor": "",
+      "opis": "Riga [miasto od strony Dźwiny, w obrębie fortyfikacji]"
+    }
+  ],
+  "Salaspilis": [
+    {
+      "src": "https://markow.pl/coding_da_vinci/kirholm.png",
+      "data": "1850",
+      "autor": "Antonio Tempesta",
+      "opis": "[Kircholm. Bitwa 1605 r.] Victoria relata in Carolo duce Sudermaniae ... per illustr. Joan. Carolum Chodkievicium... 27 septembris anno domini 1605. Roma cum privilegio summi Pontificis Jacobus Laurus Romanus f. et excudit... 1606 Antonio Tempesta sculpsit"
+    }
+  ],
+  "Moskwa": [
+    {
+      "src": "https://markow.pl/coding_da_vinci/moskwa.png",
+      "data": "1657",
+      "autor": "",
+      "opis": "[Moskwa. Widok miasta] Moscovia urbs metropolis totius Russiae Albae"
+    }
+  ],
+  "Chocim": [
+    {
+      "src": "https://markow.pl/coding_da_vinci/chocim2.png",
+      "data": "",
+      "autor": "",
+      "opis": "[Plan bitwy chocimskiej przedstawionej od strony zachodniej, oparty na planie Benszheimera]"
+    }
+  ],
+  "Obertyn": [
+    {
+      "src": "https://markow.pl/coding_da_vinci/obertyn.png",
+      "data": "1564",
+      "autor": "",
+      "opis": "[Obóz polski pod Obertynem otoczony przez Wołochów]"
+    }
+  ]
+}
