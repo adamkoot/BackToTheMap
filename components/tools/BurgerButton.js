@@ -9,7 +9,7 @@ export default function BurgerButton(props) {
   if(props.view=="burger"){
     const navigation = useNavigation();
     return (
-      <TouchableOpacity onPress={() => { navigation.openDrawer(); console.log(navigation) }} style={styles.floatingButton}>
+      <TouchableOpacity onPress={() => {navigation.openDrawer()}} style={styles.floatingButton}>
           <Image source={hamburger} style={{width:32, height:32}}/>
       </TouchableOpacity>
   
