@@ -55,7 +55,6 @@ const styles = StyleSheet.create({
   },
   top: {
     flex: 0,
-    // marginTop: 150,
   },
   header_text: {
     textAlign: "center",
@@ -70,6 +69,5 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: 150,
     textAlign: "center",
-    // alignItems: "center",
   },
 });
