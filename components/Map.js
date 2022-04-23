@@ -4,14 +4,17 @@ import data from "../data.json";
 import { useNavigation } from "@react-navigation/native";
 export default function Map() {
   const navigation = useNavigation()
-  let markers = data.map((country)=>{
+  let markers = data.map((country, index)=>{
     return (
       <Marker
+      keyExtractor={(index) => index.toString()}
       coordinate={{
         latitude: country.latitude,
         longitude: country.longitude,
       }}
-      onPress={()=>{console.log(navigation)}}
+      onPress={() => {
+        navigation.navigate("Picked Country", {country})
+      }}
     />
     )
   })

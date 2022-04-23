@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Image } from "react-native";
 import World from "./components/World.js";
 import CloseButton from "./components/tools/CloseButton"
 import ListCountry from "./components/ListCountry";
+import PickedCountry from "./components/PickedCountry";
 import Info from "./assets/icons/info.png";
 import Map from "./assets/icons/map.png";
 import List from "./assets/icons/list.png";
@@ -62,6 +63,8 @@ export default function App() {
       >
         <Drawer.Screen name="Map Screen" component={World} />
         <Drawer.Screen name="List Country" component={ListCountry} />
+        <Drawer.Screen name="Picked Country" component={PickedCountry} />
+
       </Drawer.Navigator>
     </NavigationContainer>
   );

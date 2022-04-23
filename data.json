@@ -1,7 +1,12 @@
 [{
         "country": "Poland",
         "latitude": 52.141103,
-        "longitude": 20.111
+        "longitude": 20.111,
+        "mapsCoords": [{
+            "city": "Cracow",
+            "latitude": ,
+            "longitude": ,
+        }]
     },
     {
         "country": "Italy",
