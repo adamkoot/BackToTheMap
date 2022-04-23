@@ -59,11 +59,8 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor:"rgba(255,99,99,0.4)",
-  },
-  shadowProp: {
-    shadowColor: '#171717',
-    shadowOffset: {width: -2, height: 4},
-    shadowOpacity: 0.2,
-    shadowRadius: 3,
-  },
+    elevation: 20,
+    shadowColor: '#52006A',
+
+  }
 });
