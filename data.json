@@ -1,7 +1,7 @@
 [{
         "country": "Poland",
-        "latitude": 52.141103,
-        "longitude": 20.111,
+        "latitude": 52.250689,
+        "longitude": 21.011708,
         "mapsCoords": [{
                 "city": "Kraków",
                 "latitude": 50.06653725785314,
@@ -66,8 +66,8 @@
     },
     {
         "country": "Italy",
-        "latitude": 44.657552,
-        "longitude": 10.798239,
+        "latitude": 41.902794017314555,
+        "longitude": 12.489290498790613,
         "mapsCoords": [{
             "city": "Wenecja",
             "latitude": 45.438093630695285,
@@ -76,8 +76,8 @@
     },
     {
         "country": "Turkey",
-        "latitude": 39.345357,
-        "longitude": 31.019595,
+        "latitude": 39.94860924432682,
+        "longitude": 32.837145726618225,
         "mapsCoords": [{
             "city": "Stambuł",
             "latitude": 41.02902318640653,
@@ -86,8 +86,8 @@
     },
     {
         "country": "Iran",
-        "latitude": 33.595889,
-        "longitude": 54.010872,
+        "latitude": 35.727784462555,
+        "longitude": 51.38387916071084,
         "mapsCoords": [{
                 "city": "Isfahan",
                 "latitude": 32.66216560653023,
@@ -98,8 +98,8 @@
     },
     {
         "country": "Latvia",
-        "latitude": 57.001927,
-        "longitude": 24.817010,
+        "latitude": 56.94869275410329,
+        "longitude": 24.105147904376132,
         "mapsCoords": [{
                 "city": "Ryga",
                 "latitude": 56.94665158840162,
@@ -115,8 +115,8 @@
     },
     {
         "country": "Russia",
-        "latitude": 60.108824,
-        "longitude": 55.682612,
+        "latitude": 55.770781179460876,
+        "longitude": 37.61755040275138,
         "mapsCoords": [{
                 "city": "Moskwa",
                 "latitude": 55.7258312651991,
@@ -127,8 +127,8 @@
     },
     {
         "country": "Ukraine",
-        "latitude": 50.500696,
-        "longitude": 31.240409,
+        "latitude": 50.460934621406906,
+        "longitude": 30.513789765046514,
         "mapsCoords": [{
                 "city": "Chocim",
                 "latitude": 48.50920663531834,

@@ -7,7 +7,6 @@ export default function MapScreen() {
   const [buttonView, changeButtonView] = useState("burger")
   const [scrolling, setScrolling] = useState(true)
   const changeView = (newView) => {
-    console.log(newView)
     changeButtonView(newView)
     if(newView=="burger") setScrolling(true)
     else setScrolling(false)
