@@ -21,6 +21,7 @@ export default function MapScreen() {
           style={{
             fontSize: 30,
             textAlign: "center",
+            padding: 3,
           }}
         >
           Data from: Archiwum Narodowe w Krakowie
@@ -52,7 +53,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   text: {
-    fontSize: 20,
+    fontSize: 25,
     margin: 10,
   },
 });
