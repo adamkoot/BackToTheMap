@@ -13,6 +13,7 @@
     "@react-native-picker/picker": "2.1.0",
     "@react-navigation/drawer": "^6.1.8",
     "@react-navigation/native": "^6.0.6",
+    "axios": "^0.26.1",
     "expo": "~43.0.2",
     "expo-location": "~13.0.4",
     "expo-secure-store": "~11.0.3",

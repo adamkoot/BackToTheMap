@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import Timeline from "react-native-timeline-flatlist";
@@ -11,7 +12,7 @@ function renderDetail(rowData, sectionID, rowID) {
         console.log("przechodzimy do mapki i pokazujemy miasst");
       }}
     >
-      <Text style={[styles.title]}>{rowData.title}</Text>
+      <Text>{rowData.title}</Text>
     </TouchableOpacity>
   );
   var desc = null;
@@ -25,34 +26,47 @@ function renderDetail(rowData, sectionID, rowID) {
 }
 
 export default function Timelinee({ route, navigation }) {
-  // const [cityInfo, setCityInfo] = useState(null);
-
-  //component did mount ale nie jestem pewnien czy dobrze, bo trzeba pobierac dane za kazdym odswierzeniem ekranu
+  const [cityInfo, setCityInfo] = useState("Krakow");
+  const [info, setInfo] = useState([]);
+  const [repo, setRepo] = useState([]);
+  var data = [];
   useEffect(() => {
-    // setCityInfo("Krakow");
-    // console.log(cityInfo);
-    //odebranie nazwy miasta z Map.js
     const { city } = route.params;
-    console.log(city);
+    setCityInfo(city);
+    console.log(cityInfo);
 
-    //i tutaj trzeba pobrac jsona, zparsować i wpierdolic do stejtu
-    //fetch itd https://markow.pl/coding_da_vinci/action.php?city={city}
-  }, []);
+    axios
+      .get(`https://markow.pl/coding_da_vinci/action.php?city=${city}`)
+      .then((response) => {
+        data = response.data;
+        //setRepo(myRepo);
+      });
 
-  //i tutaj forem wpierdolic nasze pobrane dane z fetcha - ze stejtu do tej tablicy
+    var pomoc = [];
+    data.map((element) => {
+      let temp = {
+        time: element.data,
+        title: element.nazwa,
+        description: element.opis,
+      };
+      pomoc.push(temp);
+    });
+    //setInfo(pomoc);
+    console.log(data);
+    //setInfo((arr) => [...arr, pomoc]);
+    //rconsole.log(info);
+  });
 
-  const data = [
-    { time: "09:00", title: "Event 1", description: "Event 1 Description" },
-    { time: "10:45", title: "Event 2", description: "Event 2 Description" },
-    { time: "12:00", title: "Event 3", description: "Event 3 Description" },
-    { time: "14:00", title: "Event 4", description: "Event 4 Description" },
-    { time: "16:30", title: "Event 5", description: "Event 5 Description" },
-  ];
+  let year = "1232";
+
+  var ldata = [{ title: year, description: "Event 1 Description", time: year }];
+
   return (
     <View style={styles.container}>
       <BurgerButton view={"mainScreen"} />
       <View style={styles.list}>
         <Timeline
+          data={ldata}
           timeStyle={{
             textAlign: "center",
             backgroundColor: "#ff9797",
@@ -60,7 +74,6 @@ export default function Timelinee({ route, navigation }) {
             borderRadius: 13,
           }}
           renderDetail={renderDetail}
-          data={data}
         />
       </View>
     </View>
