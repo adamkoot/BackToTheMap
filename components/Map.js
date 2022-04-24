@@ -9,8 +9,8 @@ export default function Map(props) {
   const [region, setRegion] = useState({
     latitude: 52.141103,
     longitude: 20.111,
-    latitudeDelta: 10.5,
-    longitudeDelta: 12,
+    latitudeDelta: 10,
+    longitudeDelta: 19,
   });
   let markers;
   if (props.scrolling) {

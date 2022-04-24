@@ -3,7 +3,8 @@ import { StyleSheet, Text, View, FlatList } from "react-native";
 import BurgerButton from "./tools/BurgerButton";
 import CountryCard from "./tools/CountryCard";
 import DATA from "../data.json"
-export default function MapScreen() {
+export default function ListCountry() {
+
   return (
     <View style={styles.container}>
       <View style={styles.top}>
@@ -19,7 +20,7 @@ export default function MapScreen() {
         numColumns={2}
         keyExtractor={(item, index) => index.toString()}
         renderItem={({ item,index}) => (
-          <CountryCard country={item.country} photo={item.photo} keyExtractor={index} />
+          <CountryCard country={item.country} photo={item.photo} keyExtractor={index} index={index}/>
         )}
       />
       </View>

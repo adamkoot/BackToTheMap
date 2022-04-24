@@ -48,10 +48,9 @@ export default function Timelinee({ route, navigation }) {
     { time: "14:00", title: "Event 4", description: "Event 4 Description" },
     { time: "16:30", title: "Event 5", description: "Event 5 Description" },
   ];
-
   return (
     <View style={styles.container}>
-      <BurgerButton view={"burger"} />
+      <BurgerButton view={"mainScreen"} />
       <View style={styles.list}>
         <Timeline
           timeStyle={{

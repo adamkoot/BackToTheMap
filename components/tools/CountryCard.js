@@ -17,7 +17,7 @@ export default function CountryCard(props) {
     <TouchableOpacity
       style={{flex:1}}
       onPress={()=>{
-        navigation.navigate('Map Screen', {})
+        
       }}
     >
       <View>

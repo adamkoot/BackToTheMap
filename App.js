@@ -42,7 +42,7 @@ export default function App() {
           <DrawerItem
             label={() => <Text style={styles.drawerItem}>Map</Text>}
             icon={() => <Image source={Map} />}
-            onPress={() => navigation.navigate("Map Screen")}
+            onPress={() => navigation.navigate('Map Screen')}
           />
           <DrawerItem
             label={() => <Text style={styles.drawerItem}>License info</Text>}
