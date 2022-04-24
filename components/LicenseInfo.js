@@ -15,8 +15,13 @@ export default function MapScreen() {
     <View style={styles.container}>
       <View style={styles.header}>
         <Image
+          // source={{ uri: "https://markow.pl/coding_da_vinci/krakow1.png" }}
           source={logo}
-          style={{ resizeMode: "stretch", width: photo_width }}
+          style={{
+            resizeMode: "stretch",
+            width: photo_width,
+            height: photo_width,
+          }}
         ></Image>
         <View style={{ marginTop: closeY * 0.5, textAlign: "center" }}>
           <Text
