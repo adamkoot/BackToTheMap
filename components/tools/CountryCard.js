@@ -17,7 +17,7 @@ export default function CountryCard(props) {
     <TouchableOpacity
       style={{flex:1}}
       onPress={()=>{
-        
+        navigation.navigate("Country Map", {country: props.country, index:props.index})
       }}
     >
       <View>
@@ -32,7 +32,6 @@ export default function CountryCard(props) {
   );
 }
 function GetPhoto(props) {
-  console.log(props.photo);
   if (props.photo == "Sweden") {
     return <Image style={styles.photo} source={sweden}></Image>;
   } else if (props.photo == "Poland") {

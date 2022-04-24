@@ -1,13 +1,14 @@
 import React, { Component, useState } from "react";
-import { StyleSheet, Text, View, Image } from "react-native";
-import Map from "./Map.js";
+import { StyleSheet, View } from "react-native";
+import Map from "./tools/Map2.js";
 import BurgerButton from "./tools/BurgerButton";
-import hamburger from "../assets/icons/hamburger.png";
-import data from "../data.json"
 
-export default function MapScreen() {
-  const [buttonView, changeButtonView] = useState("burger")
-  const [scrolling, setScrolling] = useState(true)
+import { useRoute } from "@react-navigation/native";
+
+export default function CountryMap() {
+  const [buttonView, changeButtonView] = useState("list")
+  const [scrolling, setScrolling] = useState(false)
+  const route = useRoute();
   const changeView = (newView) => {
     changeButtonView(newView)
     if(newView=="burger") setScrolling(true)
@@ -15,7 +16,7 @@ export default function MapScreen() {
   }
   return (
     <View style={styles.container}>
-      <Map change={changeView} scrolling={scrolling}/>
+      <Map change={changeView} scrolling={scrolling} country={route.params.country} index={route.params.index}/>
       <BurgerButton view={buttonView} change={changeView}/>
     </View>
   );

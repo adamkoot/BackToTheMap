@@ -23,6 +23,7 @@ export default function MapScreen() {
               country={item.country}
               photo={item.photo}
               keyExtractor={index}
+              index={index}
             />
           )}
         />

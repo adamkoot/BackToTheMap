@@ -17,30 +17,30 @@ export default function BurgerButton(props) {
   }else if(props.view=="mainScreen"){
     const navigation = useNavigation();
     return (
-      <TouchableOpacity onPress={() => { navigation.goBack()}} style={styles.floatingButton}>
+      <TouchableOpacity onPress={() => { navigation.navigate("List Country")}} style={styles.floatingButton}>
         <Image source={goback} style={{width:32, height:32}}/>
 
       </TouchableOpacity>
     );
   }
-  else if(props.view=="listScreen"){
+  else if(props.view=="list"){
     const navigation = useNavigation();
     return (
-      <TouchableOpacity onPress={() => { navigation.goBack()}} style={styles.floatingButton}>
+      <TouchableOpacity onPress={() => { navigation.navigate("List Country")}} style={styles.floatingButton}>
         <Image source={goback} style={{width:32, height:32}}/>
 
       </TouchableOpacity>
     );
   }
   else{
-      return (
-        <TouchableOpacity onPress={() => { props.change("burger")}} style={styles.floatingButton}>
-          <Image source={goback} style={{width:32, height:32}}/>
+    const navigation = useNavigation();
+    return (
+      <TouchableOpacity onPress={() => { props.change("burger")}} style={styles.floatingButton}>
+        <Image source={goback} style={{width:32, height:32}}/>
 
-        </TouchableOpacity>
-      );
+      </TouchableOpacity>
+    );
   }
-
 }
 
 const styles = StyleSheet.create({

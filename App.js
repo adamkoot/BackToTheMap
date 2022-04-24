@@ -4,7 +4,8 @@ import World from "./components/World.js";
 import CloseButton from "./components/tools/CloseButton";
 import ListCountry from "./components/ListCountry";
 import LicenseInfo from "./components/LicenseInfo";
-import Timeline from "./components/tools/Timeline.js";
+import Timeline from "./components/tools/Timeline";
+import CountryMap from "./components/CountryMap"
 import Info from "./assets/icons/info.png";
 import Map from "./assets/icons/map.png";
 import List from "./assets/icons/list.png";
@@ -66,6 +67,7 @@ export default function App() {
         <Drawer.Screen name="List Country" component={ListCountry} />
         <Drawer.Screen name="License info" component={LicenseInfo} />
         <Drawer.Screen name="Timeline" component={Timeline} />
+        <Drawer.Screen name="Country Map" component={CountryMap} />
       </Drawer.Navigator>
     </NavigationContainer>
   );
