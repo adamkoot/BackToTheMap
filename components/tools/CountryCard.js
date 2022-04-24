@@ -8,13 +8,17 @@ import latvia from "../../assets/icons/flags/latvia.png";
 import russia from "../../assets/icons/flags/russia.png";
 import turkey from "../../assets/icons/flags/turkey.png";
 import ukraine from "../../assets/icons/flags/ukraine.png";
+import { useNavigation } from '@react-navigation/native';
 
-export default function MapScreen(props) {
+export default function CountryCard(props) {
+  const navigation = useNavigation()
   return (
     <View style={styles.card}>
     <TouchableOpacity
       style={{flex:1}}
-      //   onPress={this.props.country}
+      onPress={()=>{
+        navigation.navigate('Map Screen', {})
+      }}
     >
       <View>
         <GetPhoto photo={props.country} />
