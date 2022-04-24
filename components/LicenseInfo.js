@@ -6,7 +6,7 @@ import CloseButton from "./tools/CloseButton";
 
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;
-const photo_width = windowWidth * 0.85;
+const photo_width = windowWidth * 0.75;
 const closeY = windowHeight * 0.1;
 const closex = windowWidth * 0.1;
 export default function MapScreen() {
@@ -19,7 +19,7 @@ export default function MapScreen() {
         ></Image>
         <Text
           style={{
-            fontSize: 30,
+            fontSize: 25,
             textAlign: "center",
             padding: 3,
           }}
@@ -31,7 +31,7 @@ export default function MapScreen() {
         <Text style={styles.text}>Adam Kot</Text>
         <Text style={styles.text}>Kacper Przełożny</Text>
         <Text style={styles.text}>Paweł Słota</Text>
-        <Text style={styles.text}>Max Markov</Text>
+        <Text style={styles.text}>Maksymilian Markow</Text>
       </View>
       <View style={{ position: "absolute", bottom: closeY, left: closex }}>
         <CloseButton />
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   text: {
-    fontSize: 25,
+    fontSize: 22,
     margin: 10,
   },
 });
