@@ -7,7 +7,7 @@ export default function MapScreen() {
   return (
     <View style={styles.container}>
       <View style={styles.top}>
-        <BurgerButton />
+        <BurgerButton view={"burger"}/>
         <View style={styles.header}>
           <Text style={styles.headerText}>COUNTRIES LIST</Text>
         </View>
