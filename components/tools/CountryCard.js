@@ -11,8 +11,9 @@ import ukraine from "../../assets/icons/flags/ukraine.png";
 
 export default function MapScreen(props) {
   return (
+    <View style={styles.card}>
     <TouchableOpacity
-      style={[styles.card,styles.shadowProp]}
+      style={{flex:1}}
       //   onPress={this.props.country}
     >
       <View>
@@ -22,6 +23,8 @@ export default function MapScreen(props) {
         </Text>
       </View>
     </TouchableOpacity>
+    </View>
+
   );
 }
 function GetPhoto(props) {
@@ -47,8 +50,8 @@ function GetPhoto(props) {
 
 const styles = StyleSheet.create({
   photo: {
-    width: 69,
-    height: 69,
+    width: 96,
+    height: 96,
   },
   card: {
     width:"40%",
@@ -58,7 +61,16 @@ const styles = StyleSheet.create({
     textAlign: "center",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor:"rgba(255,99,99,0.4)",
+    backgroundColor:"rgb(255, 139, 156)",
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 7,
+    },
+    shadowOpacity: 0.43,
+    shadowRadius: 9.51,
+
+    elevation: 15,
 
   }
 });
