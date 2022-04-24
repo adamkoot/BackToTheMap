@@ -9,6 +9,7 @@ const windowHeight = Dimensions.get("window").height;
 const photo_width = windowWidth * 0.75;
 const closeY = windowHeight * 0.1;
 const closex = windowWidth * 0.1;
+
 export default function MapScreen() {
   return (
     <View style={styles.container}>
@@ -17,21 +18,24 @@ export default function MapScreen() {
           source={logo}
           style={{ resizeMode: "stretch", width: photo_width }}
         ></Image>
-        <Text
-          style={{
-            fontSize: 25,
-            textAlign: "center",
-            padding: 3,
-          }}
-        >
-          Data from: Archiwum Narodowe w Krakowie
-        </Text>
-        <Text style={styles.text}>License: CC0 1.0</Text>
-        <Text style={styles.text}>Authors:</Text>
-        <Text style={styles.text}>Adam Kot</Text>
-        <Text style={styles.text}>Kacper Przełożny</Text>
-        <Text style={styles.text}>Paweł Słota</Text>
-        <Text style={styles.text}>Maksymilian Markow</Text>
+        <View style={{ marginTop: closeY * 0.5, textAlign: "center" }}>
+          <Text
+            style={{
+              fontSize: 25,
+              textAlign: "center",
+              padding: 3,
+            }}
+          >
+            Data from: Archiwum Narodowe w Krakowie
+          </Text>
+
+          <Text style={styles.text}>License: CC0 1.0</Text>
+          <Text style={styles.text}>Authors:</Text>
+          <Text style={styles.text}>- Adam Kot</Text>
+          <Text style={styles.text}>- Kacper Przełożny</Text>
+          <Text style={styles.text}>- Paweł Słota</Text>
+          <Text style={styles.text}>- Maksymilian Markow</Text>
+        </View>
       </View>
       <View style={{ position: "absolute", bottom: closeY, left: closex }}>
         <CloseButton />
@@ -48,7 +52,7 @@ const styles = StyleSheet.create({
   },
   header: {
     flex: 1,
-    marginTop: 150,
+    marginTop: closeY,
     alignItems: "center",
     textAlign: "center",
   },
