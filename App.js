@@ -49,7 +49,7 @@ export default function App() {
                 {i18n.t("AppComponent.countryList")}
               </Text>
             )}
-            icon={() => <Image source={List} />}
+            icon={() => <Image source={List} style={styles.icon}/>}
             onPress={() => navigation.navigate("List Country")}
           />
           <DrawerItem
@@ -58,7 +58,7 @@ export default function App() {
                 {i18n.t("AppComponent.map")}
               </Text>
             )}
-            icon={() => <Image source={Map} />}
+            icon={() => <Image source={Map} style={styles.icon}/>}
             onPress={() => navigation.navigate("Map Screen")}
           />
           <DrawerItem
@@ -67,11 +67,11 @@ export default function App() {
                 {i18n.t("AppComponent.licenseInfo")}
               </Text>
             )}
-            icon={() => <Image source={Info} />}
+            icon={() => <View style={styles.shadow}><Image source={Info} style={styles.icon}/></View>}
             onPress={() => navigation.navigate("License info")}
           />
+          <LanguageButton changeLanguage={changeLanguage} />
         </DrawerContentScrollView>
-        <LanguageButton changeLanguage={changeLanguage} />
         <CloseButton />
       </View>
     );
@@ -120,4 +120,18 @@ const styles = StyleSheet.create({
     height: "65%",
     resizeMode: "stretch",
   },
+  icon:{
+    width: 48,
+    height: 48,
+  },
+  shadow:{
+    shadowColor: "#00305b",
+    shadowOffset: {
+      width: 0,
+      height: 6,
+    },
+    shadowOpacity: 0.21,
+    shadowRadius: 6.65,
+    elevation: 9,
+  }
 });
