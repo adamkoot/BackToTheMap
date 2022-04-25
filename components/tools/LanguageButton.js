@@ -33,10 +33,9 @@ export default function LangSelector(props) {
 
 const styles = StyleSheet.create({
   floatingButton: {
-    position: "absolute",
-    right: 0,
-    bottom: 60,
-    width: 150,
+    flex: 1,
+    marginLeft: 15, marginRight: 15,
+    marginBottom: 15, marginTop: 15,
     backgroundColor: "#00305b",
     color: "white",
     borderRadius: 32,
