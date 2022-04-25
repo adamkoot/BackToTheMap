@@ -10,7 +10,7 @@ const photo_width = windowWidth * 0.6;
 const closeY = windowHeight * 0.1;
 const closex = windowWidth * 0.1;
 
-export default function MapScreen() {
+export default function LicenseInfo() {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
