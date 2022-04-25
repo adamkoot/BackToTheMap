@@ -2,7 +2,7 @@ import React, { Component, useState } from "react";
 import MapView, { Marker } from "react-native-maps";
 import data from "../data.json";
 import { useNavigation } from "@react-navigation/native";
-
+import mapStyle from "../mapStyle.json";
 export default function Map(props) {
   const [country, setCountry] = useState();
   const [region, setRegion] = useState({
@@ -57,6 +57,7 @@ export default function Map(props) {
       showsCompass={false}
       zoomEnabled={true}
       region={region}
+      customMapStyle={mapStyle}
     >
       {markers}
     </MapView>
