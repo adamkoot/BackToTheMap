@@ -1,12 +1,12 @@
+import i18n from "../i18n";
 import React, { Component } from "react";
 import { StyleSheet, Text, View, Image, Dimensions } from "react-native";
-import BurgerButton from "./tools/BurgerButton";
 import logo from "../assets/backtothemap.png";
 import CloseButton from "./tools/CloseButton";
 
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;
-const photo_width = windowWidth * 0.75;
+const photo_width = windowWidth * 0.6;
 const closeY = windowHeight * 0.1;
 const closex = windowWidth * 0.1;
 
@@ -15,7 +15,6 @@ export default function MapScreen() {
     <View style={styles.container}>
       <View style={styles.header}>
         <Image
-          // source={{ uri: "https://markow.pl/coding_da_vinci/krakow1.png" }}
           source={logo}
           style={{
             resizeMode: "stretch",
@@ -31,11 +30,11 @@ export default function MapScreen() {
               padding: 3,
             }}
           >
-            Data from: Archiwum Narodowe w Krakowie
+            {i18n.t("LicenseInfo.source")}
           </Text>
 
-          <Text style={styles.text}>License: CC0 1.0</Text>
-          <Text style={styles.text}>Authors:</Text>
+          <Text style={styles.text}>{i18n.t("LicenseInfo.license")}</Text>
+          <Text style={styles.text}>{i18n.t("LicenseInfo.authors")}</Text>
           <Text style={styles.text}>- Adam Kot</Text>
           <Text style={styles.text}>- Kacper Przełożny</Text>
           <Text style={styles.text}>- Paweł Słota</Text>
@@ -62,7 +61,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   text: {
-    fontSize: 22,
+    fontSize: 16,
     margin: 10,
   },
 });

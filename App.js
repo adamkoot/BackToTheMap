@@ -1,11 +1,13 @@
-import React from "react";
+import * as Localization from "expo-localization";
+import i18n from "./i18n";
+import React, { useState } from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
 import World from "./components/World.js";
 import CloseButton from "./components/tools/CloseButton";
 import ListCountry from "./components/ListCountry";
 import LicenseInfo from "./components/LicenseInfo";
 import Timeline from "./components/tools/Timeline";
-import CountryMap from "./components/CountryMap"
+import CountryMap from "./components/CountryMap";
 import Info from "./assets/icons/info.png";
 import Map from "./assets/icons/map.png";
 import List from "./assets/icons/list.png";
@@ -18,11 +20,17 @@ import {
 import { NavigationContainer } from "@react-navigation/native";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { useNavigation } from "@react-navigation/native";
+import LanguageButton from "./components/tools/LanguageButton";
 const Drawer = createDrawerNavigator();
 
 export default function App() {
   const CustomDrawerContent = (props) => {
     const navigation = useNavigation();
+    const [language, setLanguage] = useState("");
+    function changeLanguage(value) {
+      i18n.locale = value;
+      setLanguage(i18n.locale);
+    }
 
     return (
       <View
@@ -36,21 +44,34 @@ export default function App() {
         </View>
         <DrawerContentScrollView {...props}>
           <DrawerItem
-            label={() => <Text style={styles.drawerItem}>Country list</Text>}
+            label={() => (
+              <Text style={styles.drawerItem}>
+                {i18n.t("AppComponent.countryList")}
+              </Text>
+            )}
             icon={() => <Image source={List} />}
             onPress={() => navigation.navigate("List Country")}
           />
           <DrawerItem
-            label={() => <Text style={styles.drawerItem}>Map</Text>}
+            label={() => (
+              <Text style={styles.drawerItem}>
+                {i18n.t("AppComponent.map")}
+              </Text>
+            )}
             icon={() => <Image source={Map} />}
-            onPress={() => navigation.navigate('Map Screen')}
+            onPress={() => navigation.navigate("Map Screen")}
           />
           <DrawerItem
-            label={() => <Text style={styles.drawerItem}>License info</Text>}
+            label={() => (
+              <Text style={styles.drawerItem}>
+                {i18n.t("AppComponent.licenseInfo")}
+              </Text>
+            )}
             icon={() => <Image source={Info} />}
             onPress={() => navigation.navigate("License info")}
           />
         </DrawerContentScrollView>
+        <LanguageButton changeLanguage={changeLanguage} />
         <CloseButton />
       </View>
     );

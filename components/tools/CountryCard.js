@@ -8,27 +8,30 @@ import latvia from "../../assets/icons/flags/latvia.png";
 import russia from "../../assets/icons/flags/russia.png";
 import turkey from "../../assets/icons/flags/turkey.png";
 import ukraine from "../../assets/icons/flags/ukraine.png";
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation } from "@react-navigation/native";
+import i18n from "../../i18n";
 
 export default function CountryCard(props) {
-  const navigation = useNavigation()
+  const navigation = useNavigation();
   return (
     <View style={styles.card}>
-    <TouchableOpacity
-      style={{flex:1}}
-      onPress={()=>{
-        navigation.navigate("Country Map", {country: props.country, index:props.index})
-      }}
-    >
-      <View>
-        <GetPhoto photo={props.country} />
-        <Text style={{ fontSize: 25, textAlign: "center" }}>
-          {props.country}
-        </Text>
-      </View>
-    </TouchableOpacity>
+      <TouchableOpacity
+        style={{ flex: 1 }}
+        onPress={() => {
+          navigation.navigate("Country Map", {
+            country: props.country,
+            index: props.index,
+          });
+        }}
+      >
+        <View>
+          <GetPhoto photo={props.country} />
+          <Text style={{ fontSize: 25, textAlign: "center" }}>
+            {props.country}
+          </Text>
+        </View>
+      </TouchableOpacity>
     </View>
-
   );
 }
 function GetPhoto(props) {
@@ -46,7 +49,7 @@ function GetPhoto(props) {
     return <Image style={styles.photo} source={latvia}></Image>;
   } else if (props.photo == "Russia") {
     return <Image style={styles.photo} source={russia}></Image>;
-  }else if (props.photo == "Ukraine") {
+  } else if (props.photo == "Ukraine") {
     return <Image style={styles.photo} source={ukraine}></Image>;
   }
 }
@@ -57,14 +60,14 @@ const styles = StyleSheet.create({
     height: 96,
   },
   card: {
-    width:"40%",
+    width: "40%",
     padding: 20,
     margin: 20,
     borderRadius: 10,
     textAlign: "center",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor:"rgb(255, 139, 156)",
+    backgroundColor: "rgb(255, 139, 156)",
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
@@ -74,6 +77,5 @@ const styles = StyleSheet.create({
     shadowRadius: 9.51,
 
     elevation: 15,
-
-  }
+  },
 });

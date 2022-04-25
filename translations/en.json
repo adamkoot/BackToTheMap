@@ -1,0 +1,16 @@
+{
+    "AppComponent":{
+        "countryList": "List Country",
+        "map":"Map",
+        "licenseInfo":"License Info"
+    },
+    "LicenseInfo":{
+        "source":"Data from: The National Archive in Kraków",
+        "license":"License: CC0 1.0",
+        "authors":"Authors:"
+    },
+    "ListCountry":{
+        "title":"COUNTRIES LIST",
+        "Poland":"Poland"
+    }
+}
