@@ -17,7 +17,7 @@ export default function BurgerButton(props) {
   }else if(props.view=="mainScreen"){
     const navigation = useNavigation();
     return (
-      <TouchableOpacity onPress={() => { navigation.navigate("List Country")}} style={styles.floatingButton}>
+      <TouchableOpacity onPress={() => { navigation.goBack()}} style={styles.floatingButton}>
         <Image source={goback} style={{width:32, height:32}}/>
 
       </TouchableOpacity>

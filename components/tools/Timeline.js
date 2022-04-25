@@ -11,7 +11,6 @@ const photo_width = windowWidth * 0.75;
 
 
 function renderDetail(rowData, sectionID, rowID) {
-  console.log(rowData);
   let title = (
     <>
       <TouchableOpacity
@@ -53,15 +52,6 @@ export default function Timelinee({ route, navigation }) {
     const { city } = route.params;
     if(city!=cityInfo){
       setCityInfo(city)
-      // const result = await axios(
-      //   `https://markow.pl/coding_da_vinci/action.php?city=${cityInfo}`
-      // );
-      // console.log(cityInfo)
-      // console.log(result.data)
-      // timelineInfoRef.current = result.data.map((m)=>{
-      //   return {time: m.data, title: m.nazwa, description: m.opis}
-      // })
-      // console.log(timelineInfoRef.current)
     }
   });
   return (
@@ -71,7 +61,6 @@ export default function Timelinee({ route, navigation }) {
         <Timeline
           circleColor='#00305B'
           data={links[cityInfo]}
-          // isUsingFlatlist={false}
           innerCircle={'dot'}
           timeStyle={{
             textAlign: "center",
