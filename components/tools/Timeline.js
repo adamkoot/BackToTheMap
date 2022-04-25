@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import Timeline from "react-native-timeline-flatlist";
 import BurgerButton from "./BurgerButton";
@@ -26,47 +26,28 @@ function renderDetail(rowData, sectionID, rowID) {
 }
 
 export default function Timelinee({ route, navigation }) {
-  const [cityInfo, setCityInfo] = useState("Krakow");
-  const [info, setInfo] = useState([]);
-  const [repo, setRepo] = useState([]);
-  var data = [];
-  useEffect(() => {
+  const [cityInfo, setCityInfo] = useState("");
+  const dataRef = useRef([])
+  const timelineInfoRef = useRef([])
+  useEffect(async () => {
     const { city } = route.params;
-    setCityInfo(city);
-    console.log(cityInfo);
-
-    axios
-      .get(`https://markow.pl/coding_da_vinci/action.php?city=${city}`)
-      .then((response) => {
-        data = response.data;
-        //setRepo(myRepo);
-      });
-
-    var pomoc = [];
-    data.map((element) => {
-      let temp = {
-        time: element.data,
-        title: element.nazwa,
-        description: element.opis,
-      };
-      pomoc.push(temp);
-    });
-    //setInfo(pomoc);
-    console.log(data);
-    //setInfo((arr) => [...arr, pomoc]);
-    //rconsole.log(info);
+    setCityInfo(city)
+    console.log(cityInfo)
+    const result = await axios(
+      `https://markow.pl/coding_da_vinci/action.php?city=${cityInfo}`
+    );
+    console.log(result.data)
+    // dataRef.current = result.data
+    // timelineInfoRef = data.map((m)=>{
+    //   return {time: m.data, title: m.nazwa, description: m.opis}
+    // })
   });
-
-  let year = "1232";
-
-  var ldata = [{ title: year, description: "Event 1 Description", time: year }];
-
   return (
     <View style={styles.container}>
       <BurgerButton view={"mainScreen"} />
       <View style={styles.list}>
         <Timeline
-          data={ldata}
+          data={timelineInfoRef}
           timeStyle={{
             textAlign: "center",
             backgroundColor: "#ff9797",
