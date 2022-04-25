@@ -3,13 +3,14 @@ import { StyleSheet, Text, View, FlatList } from "react-native";
 import BurgerButton from "./tools/BurgerButton";
 import CountryCard from "./tools/CountryCard";
 import DATA from "../data.json";
+import i18n from "../i18n";
 export default function MapScreen() {
   return (
     <View style={styles.container}>
       <View style={styles.top}>
         <BurgerButton view={"burger"} />
         <View style={styles.header}>
-          <Text style={styles.headerText}>COUNTRIES LIST</Text>
+          <Text style={styles.headerText}>{i18n.t("ListCountry.title")}</Text>
         </View>
       </View>
       <View style={{ flex: 1, alignItems: "center" }}>

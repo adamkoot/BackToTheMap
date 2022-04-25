@@ -1,0 +1,16 @@
+{
+    "AppComponent":{
+        "countryList": "Lista Krajów",
+        "map":"Mapa",
+        "licenseInfo":"Informacje"
+    },
+    "LicenseInfo":{
+        "source":"Dane udostępniło: Narodowe Archiwum w Krakowie",
+        "license":"Licencja: CC0 1.0",
+        "authors":"Autorzy:"
+    },
+    "ListCountry":{
+        "title":"LISTA KRAJÓW",
+        "Poland":"Polska"
+    }
+}
