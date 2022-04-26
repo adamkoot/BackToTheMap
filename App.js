@@ -69,8 +69,9 @@ export default function App() {
             )}
             icon={() => <View style={styles.shadow}><Image source={Info} style={styles.icon}/></View>}
             onPress={() => navigation.navigate("License info")}
+            style={{marginBottom:20,paddingBottom:20}}
           />
-          <LanguageButton changeLanguage={changeLanguage} />
+          <LanguageButton  changeLanguage={changeLanguage} />
         </DrawerContentScrollView>
         <CloseButton />
       </View>
