@@ -1,6 +1,4 @@
-import axios from "axios";
 import React, { useEffect, useState, useRef } from "react";
-import path from "react-native-path";
 import {
   StyleSheet,
   Text,
@@ -11,8 +9,9 @@ import {
 } from "react-native";
 import Timeline from "react-native-timeline-flatlist";
 import BurgerButton from "./BurgerButton";
+import i18n from "../../i18n"
 import links from "../../link.json";
-import bijacz1 from "../../assets/cities/bijacz1.png";
+import bijacz1 from "../../assets/cities/bijacz1-min.png";
 
 const windowWidth = Dimensions.get("window").width;
 const photo_width = windowWidth * 0.75;
@@ -32,7 +31,7 @@ function renderDetail(rowData, sectionID, rowID) {
             width: photo_width,
             height: photo_width,
           }}
-        ></Image>
+        />
         <Text>Autor: {rowData["autor"]}</Text>
       </TouchableOpacity>
     </>
@@ -60,9 +59,14 @@ export default function Timelinee({ route, navigation }) {
       setCityInfo(city);
     }
   });
+  function changeLanguage(value) {
+    i18n.locale = value;
+    setLanguage(i18n.locale);
+  }
   return (
     <View style={styles.container}>
       <BurgerButton view={"mainScreen"} />
+      <LanguageButton changeLanguage={changeLanguage} />
       <View style={styles.list}>
         <Timeline
           circleColor="#00305B"
