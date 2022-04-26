@@ -1,9 +1,10 @@
 # BackToTheMap
 ![logo](https://github.com/adamkoot/BackToTheMap/blob/main/assets/backtothemap.png)
 
-Aplikacja na konkurs **HackHeroes** stworzona przez zespół **loremipsum**.
+Project created for  the **{COD1NG DA V1NC1}**
 
-## Zobacz naszą aplikację online!
+## Download apk [here](https://drive.google.com/file/d/1S24dO8OagQZ_b8HLdRX75S771hGjX6S7/view?usp=sharing)
+
 Aplikację **Będę mamą** możesz zobaczyć już teraz [tutaj](https://loremipsum-hackheroes.herokuapp.com/).
 
 ## Jak uruchomić aplikację lokalnie?
