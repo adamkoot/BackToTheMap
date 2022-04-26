@@ -1,5 +1,5 @@
-# Będę Mamą
-<img src="https://github.com/mKepka16/loremipsum/blob/main/client/public/photos/logo.svg" alt="drawing" width="200"/>
+# BackToTheMap
+![logo](https://github.com/adamkoot/BackToTheMap/blob/main/assets/backtothemap.png)
 
 Aplikacja na konkurs **HackHeroes** stworzona przez zespół **loremipsum**.
 
