@@ -14,14 +14,20 @@ Would you like to see details? Go to the documentation [here](https://drive.goog
 
 To run the application in developer mode **BackToTheMap** must be downloaded [node.js](https://nodejs.org/en/) and source code from repository (https://github.com/adamkoot/BackToTheMap.git)
 
+Install expo on your mobile OS
+>[android](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=pl&gl=US)
+>[ios](https://apps.apple.com/pl/app/expo-go/id982107779?l=pl)
+
 To prepare the project to run, go to the folder with the downloaded source code in the terminal, and then enter the following commands:
 * `npm install`
 * `expo start`
 
+#If you have everything instaled, and You have started the server, scan QR code via Expo application
+
 ## Team members
 
-***Adam Kot***
-***Kacper Przełożny***
-***Paweł Słota***
-***Maksymilian Markow***
+***Adam Kot***  
+***Kacper Przełożny***  
+***Paweł Słota***  
+***Maksymilian Markow***  
 
