@@ -116,32 +116,36 @@ function renderDetail(rowData, sectionID, rowID) {
   // let image = <ReturnPhoto src={rowData["src"]} />;
   let title = (
     <>
-      {/* <TouchableOpacity
+      <TouchableOpacity
         onPress={() => {
           //tu po kliku w tytul na osi czasu, powinno nam pokazac stara mape czy tam nalozyc na obecna mape
           // console.log(rowData["src"]);
         }}
-      > */}
-      <SingleImageZoomViewer
-        style={{
-          resizeMode: "stretch",
-          width: 200,
-          height: 200,
-        }}
-        source={require("../../assets/cities/icons/bijacz1.png")}
-      />
-      {/* <Image
+      >
+        {/* komponent z biblioteki do zoomowania zdjecia - do zrobienia */}
+        <SingleImageZoomViewer
+          style={{
+            resizeMode: "stretch",
+            width: 200,
+            height: 200,
+          }}
+          source={require("../../assets/cities/icons/bijacz1.png")}
+          // source={require("../../assets/cities/icons/" + rowData["src"])}
+        />
+        {/* --------------------------------- */}
+
+        <Image
           source={ReturnPhoto(rowData["src"])}
           style={{
             resizeMode: "stretch",
             width: photo_width,
             height: photo_width,
           }}
-        /> */}
-      <Text style={{ fontSize: 17, marginBottom: 5 }}>
-        Autor: {rowData["autor"]}
-      </Text>
-      {/* </TouchableOpacity> */}
+        />
+        <Text style={{ fontSize: 17, marginBottom: 5 }}>
+          Autor: {rowData["autor"]}
+        </Text>
+      </TouchableOpacity>
     </>
   );
   var desc = null;
