@@ -32,6 +32,15 @@ export default function BurgerButton(props) {
       </TouchableOpacity>
     );
   }
+  else if(props.view=="map"){
+    const navigation = useNavigation();
+    return (
+        <TouchableOpacity onPress={() => { navigation.navigate("Timeline")}} style={styles.floatingButton}>
+          <Image source={goback} style={{width:32, height:32}}/>
+
+        </TouchableOpacity>
+    );
+  }
   else{
     const navigation = useNavigation();
     return (

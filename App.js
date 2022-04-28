@@ -7,6 +7,7 @@ import CloseButton from "./components/tools/CloseButton";
 import ListCountry from "./components/ListCountry";
 import LicenseInfo from "./components/LicenseInfo";
 import Timeline from "./components/tools/Timeline";
+import BigPicture from "./components/BigPicture";
 import CountryMap from "./components/CountryMap";
 import Info from "./assets/icons/info.png";
 import Map from "./assets/icons/map.png";
@@ -89,6 +90,7 @@ export default function App() {
         <Drawer.Screen name="List Country" component={ListCountry} />
         <Drawer.Screen name="License info" component={LicenseInfo} />
         <Drawer.Screen name="Timeline" component={Timeline} />
+        <Drawer.Screen name="BigPicture" component={BigPicture} />
         <Drawer.Screen name="Country Map" component={CountryMap} />
       </Drawer.Navigator>
     </NavigationContainer>
