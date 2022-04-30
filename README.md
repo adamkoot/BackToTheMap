@@ -3,11 +3,9 @@
 
 ## Documentation
 Project created for  the **{COD1NG DA V1NC1} Ost³ 2022**
-Would you like to see details? Go to the documentation [here](https://drive.google.com/file/d/1S24dO8OagQZ_b8HLdRX75S771hGjX6S7/view?usp=sharing)
+Would you like to see details? Go to the documentation [here](https://codingdavinci.de/de/projekte/backtothemap)
 
-# Final version .apk (android) [here](https://drive.google.com/file/d/1S24dO8OagQZ_b8HLdRX75S771hGjX6S7/view?usp=sharing)
-
-# Final version .ios (iphone) [here](https://drive.google.com/file/d/1S24dO8OagQZ_b8HLdRX75S771hGjX6S7/view?usp=sharing)
+# Final version .apk (android) [here](https://drive.google.com/file/d/14Z2EDGVKY2NTgkbzpD00PO2uQQMmqxvS/view?usp=sharing)
 
 
 ## How to run the application in developer mode?
