@@ -1,4 +1,11 @@
 {
+    "more":"Czytaj więcej",
+    "Language":{
+        "poland":"Polski",
+        "czech":"Czeski",
+        "deuchland":"Niemiecki",
+        "england":"Angielski"
+    },
     "AppComponent":{
         "countryList": "Lista Krajów",
         "map":"Mapa",

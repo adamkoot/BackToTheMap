@@ -1,0 +1,22 @@
+{
+    "more":"Weiterlesen",
+    "Language":{
+        "poland":"Polnische",
+        "czech":"Tschechisch",
+        "deuchland":"Deutsch",
+        "england":"Englisch"
+    },
+    "AppComponent":{
+        "countryList": "Land auflisten",
+        "map":"Karte",
+        "licenseInfo":"Lizenzinformationen"
+    },
+    "LicenseInfo":{
+        "source":"Daten von: The National Archive in Kraków",
+        "license":"Lizenz: CC0 1.0",
+        "authors":"Autoren:"
+    },
+    "ListCountry":{
+        "title":"LÄNDERLISTE"
+    }
+}

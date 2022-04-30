@@ -1,4 +1,11 @@
 {
+    "more":"Read more",
+    "Language":{
+        "poland":"Polish",
+        "czech":"Czech",
+        "deuchland":"German",
+        "england":"English"
+    },
     "AppComponent":{
         "countryList": "List Country",
         "map":"Map",
@@ -10,7 +17,6 @@
         "authors":"Authors:"
     },
     "ListCountry":{
-        "title":"COUNTRIES LIST",
-        "Poland":"Poland"
+        "title":"COUNTRIES LIST"
     }
 }

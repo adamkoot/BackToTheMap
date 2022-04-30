@@ -1,0 +1,22 @@
+{
+    "more":"Přečtěte si více",
+    "Language":{
+        "poland":"Polski",
+        "czech":"Czech",
+        "deuchland":"German",
+        "england":"English"
+    },
+    "AppComponent":{
+        "countryList": "Seznam zemí",
+        "map":"Mapa",
+        "licenseInfo":"Informace o licenci"
+    },
+    "LicenseInfo":{
+        "source":"Údaje z: The National Archive in Kraków",
+        "license":"Licence: CC0 1.0",
+        "authors":"Autoři:"
+    },
+    "ListCountry":{
+        "title":"SEZNAM ZEMĚ"
+    }
+}

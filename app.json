@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "app003",
-    "slug": "app003",
+    "name": "BackToTheMap",
+    "slug": "BackToTheMap",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icons/hamburger.png",
+    "icon": "./assets/miniLogo.png",
     "splash": {
-      "image": "./assets/icon.png",
+      "image": "./assets/backtothemap.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -20,11 +20,16 @@
       "supportsTablet": true
     },
     "android": {
+      "config":{
+      "googleMaps":{
+        "apiKey": "AIzaSyA9dQ-fb5qZJB8an3FkPXW9yw8JhVQa8UE"
+      }
+    },
       "adaptiveIcon": {
-        "foregroundImage": "./assets/icon.png",
+        "foregroundImage": "./assets/miniLogo.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.kacperprzelozny.app003"
+      "package": "com.arabeska.backtothemap"
     },
     "web": {
       "favicon": "./assets/favicon.png"

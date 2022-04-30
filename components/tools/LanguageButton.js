@@ -9,6 +9,7 @@ export default function LangSelector(props) {
     i18n.locale = value;
     setSelectedValue(i18n.locale);
   }
+
   return (
     <View style={styles.floatingButton}>
       <Picker
@@ -24,8 +25,26 @@ export default function LangSelector(props) {
           setSelectedValue(itemValue);
         }}
       >
-        <Picker.Item color="#00305b" label="🇵🇱 Polski" value="pl" />
-        <Picker.Item color="#00305b" label="🇬🇧 Angielski" value="en" />
+        <Picker.Item
+          color="#00305b"
+          label={"🇵🇱" + i18n.t("Language.poland")}
+          value="pl"
+        />
+        <Picker.Item
+          color="#00305b"
+          label={"🇬🇧" + i18n.t("Language.england")}
+          value="en"
+        />
+        <Picker.Item
+          color="#00305b"
+          label={"🇨🇿" + i18n.t("Language.czech")}
+          value="cz"
+        />
+        <Picker.Item
+          color="#00305b"
+          label={"🇩🇪" + i18n.t("Language.deuchland")}
+          value="de"
+        />
       </Picker>
     </View>
   );
@@ -33,9 +52,10 @@ export default function LangSelector(props) {
 
 const styles = StyleSheet.create({
   floatingButton: {
-    flex: 1,
-    marginLeft: 15, marginRight: 15,
-    marginBottom: 15, marginTop: 15,
+    height: 60,
+    marginBottom: 220,
+    marginRight: 15,
+    marginLeft: 15,
     backgroundColor: "#00305b",
     color: "white",
     borderRadius: 32,

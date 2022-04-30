@@ -22,6 +22,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { useNavigation } from "@react-navigation/native";
 import LanguageButton from "./components/tools/LanguageButton";
+import { useEffect } from "react/cjs/react.production.min";
 const Drawer = createDrawerNavigator();
 
 export default function App() {
@@ -31,6 +32,7 @@ export default function App() {
     function changeLanguage(value) {
       i18n.locale = value;
       setLanguage(i18n.locale);
+      console.log("dupa app.js" + i18n.locale);
     }
 
     return (
@@ -43,37 +45,43 @@ export default function App() {
         <View style={styles.menu}>
           <Image source={Logo} style={styles.photo} />
         </View>
-        <DrawerContentScrollView {...props}>
-          <DrawerItem
-            label={() => (
-              <Text style={styles.drawerItem}>
-                {i18n.t("AppComponent.countryList")}
-              </Text>
-            )}
-            icon={() => <Image source={List} style={styles.icon}/>}
-            onPress={() => navigation.navigate("List Country")}
-          />
-          <DrawerItem
-            label={() => (
-              <Text style={styles.drawerItem}>
-                {i18n.t("AppComponent.map")}
-              </Text>
-            )}
-            icon={() => <Image source={Map} style={styles.icon}/>}
-            onPress={() => navigation.navigate("Map Screen")}
-          />
-          <DrawerItem
-            label={() => (
-              <Text style={styles.drawerItem}>
-                {i18n.t("AppComponent.licenseInfo")}
-              </Text>
-            )}
-            icon={() => <View style={styles.shadow}><Image source={Info} style={styles.icon}/></View>}
-            onPress={() => navigation.navigate("License info")}
-            style={{marginBottom:20,paddingBottom:20}}
-          />
-          <LanguageButton  changeLanguage={changeLanguage} />
-        </DrawerContentScrollView>
+        <View style={{ flex: 1 }}>
+          <DrawerContentScrollView {...props}>
+            <DrawerItem
+              label={() => (
+                <Text style={styles.drawerItem}>
+                  {i18n.t("AppComponent.countryList")}
+                </Text>
+              )}
+              icon={() => <Image source={List} style={styles.icon} />}
+              onPress={() => navigation.navigate("List Country")}
+            />
+            <DrawerItem
+              label={() => (
+                <Text style={styles.drawerItem}>
+                  {i18n.t("AppComponent.map")}
+                </Text>
+              )}
+              icon={() => <Image source={Map} style={styles.icon} />}
+              onPress={() => navigation.navigate("Map Screen")}
+            />
+            <DrawerItem
+              label={() => (
+                <Text style={styles.drawerItem}>
+                  {i18n.t("AppComponent.licenseInfo")}
+                </Text>
+              )}
+              icon={() => (
+                <View style={styles.shadow}>
+                  <Image source={Info} style={styles.icon} />
+                </View>
+              )}
+              onPress={() => navigation.navigate("License info")}
+              style={{ marginBottom: 20, paddingBottom: 20 }}
+            />
+          </DrawerContentScrollView>
+          <LanguageButton changeLanguage={changeLanguage} />
+        </View>
         <CloseButton />
       </View>
     );
@@ -115,7 +123,7 @@ const styles = StyleSheet.create({
     elevation: 4,
   },
   drawerItem: {
-    fontSize: 22,
+    fontSize: 20,
     color: "#00305b",
   },
   photo: {
@@ -123,11 +131,11 @@ const styles = StyleSheet.create({
     height: "65%",
     resizeMode: "stretch",
   },
-  icon:{
+  icon: {
     width: 48,
     height: 48,
   },
-  shadow:{
+  shadow: {
     shadowColor: "#00305b",
     shadowOffset: {
       width: 0,
@@ -136,5 +144,5 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.21,
     shadowRadius: 6.65,
     elevation: 9,
-  }
+  },
 });
